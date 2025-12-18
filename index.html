@@ -398,19 +398,20 @@
         updateBannerVisibility();
       }
 
-      var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/WebGL Builds.loader.js";
-      var config = {
-        arguments: [],
-        dataUrl: buildUrl + "/WebGL Builds.data.br",
-        frameworkUrl: buildUrl + "/WebGL Builds.framework.js.br",
-        codeUrl: buildUrl + "/WebGL Builds.wasm.br",
-        streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
-        productName: "Waste Map Website",
-        productVersion: "1.0",
-        showBanner: unityShowBanner,
-      };
+     var buildUrl = "Build";
+var loaderUrl = buildUrl + "/BuildWeb.loader.js";
+var config = {
+  arguments: [],
+  dataUrl: buildUrl + "/BuildWeb.data",
+  frameworkUrl: buildUrl + "/BuildWeb.framework.js",
+  codeUrl: buildUrl + "/BuildWeb.wasm",
+  streamingAssetsUrl: "StreamingAssets",
+  companyName: "DefaultCompany",
+  productName: "Waste Map Website",
+  productVersion: "1.0",
+  showBanner: unityShowBanner,
+};
+
 
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         var meta = document.createElement("meta");
